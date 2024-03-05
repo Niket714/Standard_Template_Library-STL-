@@ -1,4 +1,4 @@
-// maps and unordered maps
+// Map in STL
 
 // map is a data structure which store key value pair
 // it creates mapping from a key to a value which can be of same and diff data types
@@ -42,6 +42,7 @@ int main()
     //     cout << value.first << " " << value.second << endl;
     // }
     print_map(m);
+    cout << endl;
 
     // the keys of the map are unique and if we insert the same key again then the value
     // of the existing key will be changed
@@ -62,10 +63,42 @@ int main()
     print_map(m);
     // the time complexity of erase operation is also O(log(n));
     // it if pass some key in erase which is not present in map then it will return segmentation error
-
+    cout << endl;
+    
     m.clear();
     // it clear all the values of the map
     print_map(m);
+
+    cout << endl;
+
+    // Nesting in map
+    map<pair<string, string>, vector<int>> mm;
+    int t;
+    cin >> t;
+    for (int i = 0; i < t; i++)
+    {
+        string f_name, l_name;
+        int ct;
+        cin >> f_name >> l_name >> ct;
+        for (int j = 0; j < ct; j++)
+        {
+            int x;
+            cin >> x;
+            mm[{f_name, l_name}].push_back(x);
+        }
+    }
+    for (auto &pr : mm)
+    {
+        auto &full_name = pr.first;
+        auto &marks = pr.second;
+        cout << full_name.first << " " << full_name.second << endl;
+        cout << marks.size() << endl;
+        for (auto &value : marks)
+        {
+            cout << value << " ";
+        }
+        cout << endl;
+    }
 
     
     return 0;

@@ -1,6 +1,7 @@
+// Calculate NGE(next greater element) using stack in stl
+
 #include <bits/stdc++.h>
 using namespace std;
-
 
 vector<int> NGE(vector<int> &v)
 {
@@ -39,7 +40,5 @@ int main()
         nge[i]==-1? cout << -1 << endl : cout << v[nge[i]] << endl;
         
     }
-    
-    
     return 0;
 }

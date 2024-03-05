@@ -1,3 +1,6 @@
+// Stack and Queue in STL
+// every fuction of stack and queue like push, pop , size, top, front , empty etc are inbuilt and we can directly use them
+
 #include <bits/stdc++.h>
 using namespace std;
 

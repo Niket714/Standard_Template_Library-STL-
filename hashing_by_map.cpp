@@ -1,10 +1,10 @@
+// hashing technique can be done using maps
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main()
 {
-    // hashing technique can be done using maps
-
     map<int,int> map ; 
     int n;
     cin >> n;

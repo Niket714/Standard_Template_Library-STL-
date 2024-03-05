@@ -1,3 +1,6 @@
+// Comparator function in STL 
+// Used mainly during custom sorting
+
 #include <bits/stdc++.h>
 using namespace std;
 

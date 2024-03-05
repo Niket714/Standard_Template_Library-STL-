@@ -1,3 +1,5 @@
+// Vectors in STL
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -37,7 +39,6 @@ int main()
     }
     print_vector(v);
 
-
     // we can also declare size of vector and in this it will be initialized to 0
     vector<int> v1(10);
     print_vector(v1);
@@ -54,7 +55,6 @@ int main()
     // time complexity will be O(1)
     print_vector(v2);
 
-
     // we can also copy the vector from one to another
     // and in this copy is send
     // in array no new array is formed 
@@ -66,15 +66,9 @@ int main()
     print_vector(v1); // so here v1 will not change
     // but in array v1 will be changed and we cannot not also copy the whole array like this
 
-
     // if we pass vector in some function then at that time also a copy
     // of vector is created which is of O(n) time complexity 
     // which is very expensive so we mostly use call by refrence in such cases to save time
 
-    
-
-
-    
-    
     return 0;
 }

@@ -1,4 +1,20 @@
-// unordered maps
+// Unordered maps in STL
+
+// diff in map and unordered map
+//                   | map             | unordered_map
+// ---------------------------------------------------------
+// Ordering        | increasing order   | no ordering
+//                 | of keys(by default) |
+
+// Implementation  | Self balancing BST  | Hash Table
+//                 | like Red-Black Tree |  
+
+// search time     | log(n)              | O(1) -> Average 
+//                 |                     | O(n) -> Worst Case
+
+// Insertion time  | log(n) + Rebalance  | Same as search
+                      
+// Deletion time   | log(n) + Rebalance  | Same as search
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -13,11 +29,6 @@ void print_map(auto &map)
 }
 int main()
 {
-    // the diff between map and unordered_map
-    // 1. inbuilt implementation
-    // 2. time complexity
-    // 3. valid keys datatype
-
     // hash tables are used in unordered maps
     unordered_map<int,string> m;
     m[1] = "abc";
@@ -38,7 +49,6 @@ int main()
     // this above statement gives error because unordered_map is stored in hash table
     // so hash value is created and hash value of pair cannot be created
     //  hash function is defined for basic datatype like int, double, char and string also
-
 
 
     // multi map

@@ -1,3 +1,5 @@
+// Sorting in STL
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -5,17 +7,17 @@ int main()
 {
     int n;
     cin >> n;
-    int a[n];
+    vector<int> a(n);
     for (int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
-    // sort(a,a+n); // this will sort from starting of array to end of array
+    sort(a.begin() , a.end()); // this will sort from starting of array to end of array
     
     // sort has two inputs one is the starting address from where we have to start the sorting
     // and second is the next address of the array upto which we have to sort
-    // sort(a+2,a+n); // this will sort from the third element to the last element
-    sort(a , a+4); // this will sort from the first element to the fourth element 
+    // sort(a.begin()+2,a.end()); // this will sort from the third element to the last element
+    // sort(a.begin() , a.begin() + 4); // this will sort from the first element to the fourth element 
 
     for (int i = 0; i < n; i++)
     {
